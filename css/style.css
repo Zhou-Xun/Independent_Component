@@ -1,0 +1,196 @@
+body {
+    background-image: url("../images/forest.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: #000000;
+    font-weight:600;
+    color: white;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.skip{
+    animation: mymove 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mymove {
+    from{width: 25px; opacity: 0; color: darkgrey}
+    to{width: 475px; opacity: 1; color: white}
+}
+
+h4 {
+    margin: 0 0 10px 0;
+    text-align:center;
+}
+
+.hovernav{
+    display:inline-block;
+    backface-visibility: hidden;
+    vertical-align: middle;
+    position:relative;
+    box-shadow: 0 0 1px rgba(0,0,0,0);
+    tranform: translateZ(0);
+    transition-duration: .3s;
+    transition-property:transform;
+    margin: 0 20px;
+}
+
+nav {
+    background: none !important;
+    text-transform:uppercase;
+    text-align:center;
+}
+
+.active-page {
+    border: 1px white dashed;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+a {
+    transition: .5s color ease-in-out;
+    text-decoration: none;
+}
+
+a:visited, a:active, a:link{
+    color: white;
+}
+
+.hovernav::before{
+    position:absolute;
+    z-index:-1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height:10px;
+    width:90%;
+    opacity:0;
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+    transition-duration: 0.5s;
+    transition-property: transform, opacity;
+}
+
+.hovernav:hover::before{
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+.hovernav:hover{
+    transform: translateY(-2px);
+}
+
+
+
+#lyst {
+    display: inline-block;
+}
+
+main {
+    display: block;
+}
+
+.grid {
+    margin: 0;
+    display: grid;
+    width: 1200px;
+    height: 800px;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+
+footer {
+    display: block;
+    align-items: center;
+}
+
+body {
+    margin: 1%;
+    padding: 1%;
+}
+
+.main-section-content h1 {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.main-section {
+    margin-left: 100px;
+}
+
+.first-section img {
+    float: left;
+}
+
+header h1 {
+    text-align:center;
+}
+
+.first-section h4 {
+    text-align: left;
+    margin-left: 50px;
+}
+
+.first-section{
+    height: 400px;
+    width: 1200px;
+}
+
+.first-section .review p {
+    position: relative;
+    left: 1em;
+    line-height: 0.5em;
+}
+.first-section .review a {
+    color: #a9a9a9;
+    text-decoration: underline;
+}
+
+.first-section .review img {
+    position: relative;
+    height: 1.2em;
+    bottom: 5px;
+}
+
+.first-section li{
+    display:inline;
+    margin: 0;
+}
+
+ul {
+    list-style-image: url('https://en.wikipedia.org/w/skins/Vector/resources/common/images/bullet-icon.svg?d4515');
+}
+
+
+.first-section .review span {
+    color: #a9a9a9;
+}
+
+.second-section .box:nth-of-type(even) img{
+    border: 5px solid maroon;
+}
+
+img:hover{
+    filter: grayscale(50%);
+    border: dashed;
+}
+
+form {
+    margin: 20px auto;
+    width:250px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .skip{
+        animation: none;
+    }
+}
