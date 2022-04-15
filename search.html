@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="js/search.js" defer></script>
+</head>
+<body>
+    <a class = "skip" href="#main">Skip to Main Content</a>
+    <header>
+
+        <nav style="top:0px;">
+            <ul>
+                <li class="hovernav active-page"><a href="search.html">Search</a></li>
+                <li class="hovernav"><a href="index.html" >Horror Films 2021/2022</a></li>
+                <li class="hovernav"><a href="imdb.html">Top 10 Movies IMDb</a></li>
+                <li class="hovernav"><a href="netflix.html">Watch list for Netflix</a></li>
+                <li class="hovernav"><a href="director.html">Directors</a></li>
+                <li class="hovernav"><a href="contact.html">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 style="color: aliceblue">Movie Search</h1>
+        <div class="row">
+            <div class="col">Saved movies: <span id="saved_movies"></span></div>
+        </div>
+        <div class="row">
+            <div class="input-group col">
+                <input class="form-control" type="text" placeholder="Enter a title" id="title_input" />
+                <button id="show_title" type="button" class="btn btn-primary">Search title</button>
+                <button id="show_synonyms" type="button" class="btn btn-secondary">Show synonyms</button>
+            </div>
+        </div>
+        <div class="row">
+            <h2 class="col" id="output_description"></h2>
+        </div>
+        <div class="output row">
+            <output id = "movie_output" class="col">
+
+            </output>
+
+        </div>
+    </main>
+</body>
+
+</html>

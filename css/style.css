@@ -4,7 +4,7 @@ body {
     background-size:cover;
     background-color: #000000;
     font-weight:600;
-    color: white;
+    color: aliceblue;
     font-family: 'Didact Gothic', sans-serif;
 }
 
@@ -16,7 +16,7 @@ body {
 
 @keyframes mymove {
     from{width: 25px; opacity: 0; color: darkgrey}
-    to{width: 475px; opacity: 1; color: white}
+    to{width: 475px; opacity: 1; color: aliceblue}
 }
 
 h4 {
@@ -26,13 +26,8 @@ h4 {
 
 .hovernav{
     display:inline-block;
-    backface-visibility: hidden;
-    vertical-align: middle;
     position:relative;
     box-shadow: 0 0 1px rgba(0,0,0,0);
-    tranform: translateZ(0);
-    transition-duration: .3s;
-    transition-property:transform;
 }
 
 nav {
@@ -42,7 +37,7 @@ nav {
 }
 
 .active-page {
-    border: 1px white dashed;
+    border: 1px aliceblue dashed;
 }
 
 ul {
@@ -53,22 +48,22 @@ ul {
 }
 
 
-.active-page a{
-    position: relative;
-    background: linear-gradient(90deg, black, darkgrey, lightgrey);
-    background-repeat: no-repeat;
-    background-size: 80%;
-    animation: shining 3s infinite;
-}
+/*.active-page a{*/
+/*    position: relative;*/
+/*    background: linear-gradient(90deg, black, darkgrey, lightgrey);*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: 80%;*/
+/*    animation: shining 3s infinite;*/
+/*}*/
 
-@keyframes shining {
-    0% {
-        background-position: -500%;
-    }
-    100% {
-        background-position: 500%;
-    }
-}
+/*@keyframes shining {*/
+/*    0% {*/
+/*        background-position: -500%;*/
+/*    }*/
+/*    100% {*/
+/*        background-position: 500%;*/
+/*    }*/
+/*}*/
 
 a {
     transition: .5s color ease-in-out;
@@ -76,7 +71,7 @@ a {
 }
 
 a:visited, a:active, a:link{
-    color: white;
+    color: aliceblue;
 }
 
 .hovernav::before{
