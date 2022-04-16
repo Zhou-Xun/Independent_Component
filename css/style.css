@@ -250,6 +250,19 @@ h4 {
     box-shadow: 0 0 10px #9ecaed;
 }
 
+/*star rating checked*/
+.checked {
+    color: orange;
+}
+
+.red {
+    color: tomato;
+}
+
+.dropdown-item:visited, .dropdown-item:active, .dropdown-item:link {
+    color: #212529;
+}
+
 @media (prefers-reduced-motion: reduce) {
     .skip{
         animation: none;
