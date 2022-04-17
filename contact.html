@@ -12,6 +12,8 @@
   </script>
   <meta charset="UTF-8">
   <title>Horror Movie Directors</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
   <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
@@ -24,7 +26,6 @@
   <!-- Navigation-->
   <nav>
     <ul>
-      <li class="hovernav"><a href="search.html">Search</a></li>
       <li class="hovernav"><a href="index.html">Horror Films 2021/2022</a></li>
       <li class="hovernav"><a href="imdb.html">Top 10 Movies IMDb</a></li>
       <li class="hovernav"><a href="netflix.html">Watch list for Netflix</a></li>
@@ -34,25 +35,66 @@
   </nav>
 </header>
 
+<main id="main">
+  <form action="https://formspree.io/f/xdobdwya" method="POST" style="min-width: 550px">
+    <div class="form-group row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Email &nbsp<i class="fa fa-envelope fa-lg" aria-hidden="true"></i></label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+      </div>
+    </div>
+    <div class="form-group row mb-3">
+      <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+      <div class="col-sm-10">
+        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+      </div>
+    </div>
+    <fieldset class="form-group">
+      <div class="row">
+        <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+            <label class="form-check-label" for="gridRadios1">
+              First radio
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+            <label class="form-check-label" for="gridRadios2">
+              Second radio
+            </label>
+          </div>
+          <div class="form-check disabled">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+            <label class="form-check-label" for="gridRadios3">
+              Third disabled radio
+            </label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <div class="form-group row mb-2">
+      <div class="col-sm-2">Checkbox</div>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck1">
+          <label class="form-check-label" for="gridCheck1">
+            Example checkbox
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <button type="submit" class="btn btn-primary">Sign in</button>
+      </div>
+    </div>
+  </form>
+</main>
 
-<form action="https://formspree.io/f/xdobdwya" method="POST">
-  <div class="input-container ic1">
-    <input id="firstname" class="input" type="text" placeholder=" " name="firstname"/>
-    <div class="cut"></div>
-    <label for="firstname" class="placeholder">First name</label>
-  </div>
-  <div class="input-container ic2">
-    <input id="lastname" class="input" type="text" placeholder=" " name="lastname"/>
-    <div class="cut"></div>
-    <label for="lastname" class="placeholder">Last name</label>
-  </div>
-  <div class="input-container ic2">
-    <input id="email" class="input" type="text" placeholder=" " name="email" />
-    <div class="cut cut-short"></div>
-    <label for="email" class="placeholder">Email</label>
-  </div>
-  <button type="submit">Send</button>
-</form>
-
+<footer>
+  <p>Xun Zhou &copy; 2022 &emsp; <a href="https://github.com/Zhou-Xun" aria-label="github link"><i class="fa-brands fa-github"></i></a></p>
+</footer>
 </body>
 </html>

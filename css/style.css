@@ -1,5 +1,5 @@
 body {
-    background-image: url("../images/forest.jpg");
+    background-image: url("../images/forest2.png");
     background-repeat: no-repeat;
     background-size:cover;
     background-color: #000000;
@@ -128,6 +128,11 @@ body {
 
 header h1 {
     text-align:center;
+    font-size: 2.5rem;
+    margin-top: 1.8rem;
+    margin-bottom: 0;
+    line-height: unset;
+    font-weight: unset;
 }
 
 /*section define*/
@@ -145,19 +150,29 @@ main {
 }
 
 .main-section-content h1 {
-    text-align: left;
-    margin-bottom: 10px;
+    margin-top: 50px;
+    margin-bottom: 0;
 }
 
 /*first section*/
-.first-section img {
+.main-section-content > img {
     float: left;
+    height: 250px;
+    width: 180px;
 }
 
 .first-section h4 {
     text-align: left;
     margin-left: 50px;
 }
+
+/*.review {*/
+/*    background-color: #dadada;*/
+/*    padding: 10px;*/
+/*    color: black;*/
+/*    opacity: 0.8;*/
+
+/*}*/
 
 .first-section .review p {
     position: relative;
@@ -277,6 +292,14 @@ h4 {
 .dropdown-item:visited, .dropdown-item:active, .dropdown-item:link {
     color: #212529;
 }
+
+/*!*special control, affected by bootstrap*!*/
+/*#contactH1 {*/
+/*    font-size: unset;*/
+/*    margin: unset;*/
+/*    font-weight: unset;*/
+/*    line-height: unset;*/
+/*}*/
 
 @media (prefers-reduced-motion: reduce) {
     .skip{

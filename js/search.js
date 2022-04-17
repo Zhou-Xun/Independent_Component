@@ -83,10 +83,13 @@ const searchTitle = e => {
                 const title_poster = document.createElement("div");
                 title_poster.classList.add("col");
                 movie.append(title_poster)
-
+                // check if there is a poster_path
+                const final_poster_path = poster_path ? `https://image.tmdb.org/t/p/original${poster_path}` : "./images/question.png"
+                console.log(poster_path);
+                console.log(final_poster_path);
                 title_poster.innerHTML += `<h4 style="max-width: none; text-align: unset">${original_title}&nbsp<span style="font-size: 18px">(${release_date})</span></h4>`
-                title_poster.innerHTML += `<img width="200" height="300" src="https://image.tmdb.org/t/p/original${poster_path}"  alt=${original_title} />`
-                title_poster.innerHTML += `<span id=${original_title} class="fa fa-heart liked" style="position:relative; bottom:120px; left: 16px; font-color:white">&nbsp Like</span>`
+                title_poster.innerHTML += `<img width="200" height="300" src="${final_poster_path}"  alt=${original_title} />`
+                title_poster.innerHTML += `<div style="display:inline-block; position:relative; bottom:120px; left: 16px; font-color:white"><i id="${original_title}" class="fa fa-heart liked" ></i><span>&nbsp Like</span></div>`
 
                 // intro
                 const intro = document.createElement("div");
